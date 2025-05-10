@@ -1,0 +1,25 @@
+{
+    "name": "ts-plugin-raise-custom-error",
+    "description": "A Typescript plugin to raise Errors and Warnings in the IDE.",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./types": {
+            "types": "./types.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "peerDependencies": {
+        "typescript": "*"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.3"
+    }
+}
